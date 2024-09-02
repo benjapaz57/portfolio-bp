@@ -1,0 +1,491 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+  margin:0;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  letter-spacing: 2px;
+  font-size:48px;
+}
+p {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size:14px;
+  color: #333333;
+}
+
+.header {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  color:white;
+}
+.logo {
+  width:50px;
+  fill:white;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.inner-header {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+
+/* Cards */
+
+.rect1{
+    margin-left: 200px;
+    height: 180px; 
+    width: auto;
+    background-color: #494AB9; 
+}
+.rect2{
+    margin-right: 200px;
+    background-color: #06A5C1;
+    height: 180px; 
+    width: auto;
+}
+#div-cartas h5{
+    color: rgb(29, 29, 29);
+    text-shadow: rgb(158, 158, 158) 3px 3px 3px;
+    text-decoration: underline;
+}
+.txt-card{
+    color: white; 
+}
+.textocard2{
+    margin-left: 140px;
+}
+.titulocard{
+    margin-left: 250px;
+}
+.titulocard2{
+    margin-left: 160px;
+}
+.rect2text{
+    margin-left: 20px;
+}
+.rect1text{
+    margin-left: 20px;
+
+}
+.card-title{
+    font-style: italic;
+    text-decoration: underline;
+    margin: 10px;
+}
+
+/* cards copy */
+@media (max-width: 1401px) {
+    .h5card{
+         font-size: 18px;
+     }
+     .txt-card{
+             font-size: 15px;
+     }
+    
+ 
+     
+ }
+ @media (max-width: 1201px) {
+     .h5card{
+          font-size: 15px;
+      }
+      .txt-card{
+         font-size: 14px;
+      }
+      .rect1{
+         height: 220px;
+     }
+     .rect2{
+         height: 220px;
+     }
+     .textocard1{
+         width: 800px;
+     }
+     .textocard2{
+         width: 800px;
+         margin-left: 30px;
+     }
+     .titulocard{
+         margin-left: 210px;
+     }
+     
+     .titulocard2{
+         margin-left: 50px;
+     }
+     
+     
+ }
+ @media (max-width: 993px) {
+     .h5card{
+          font-size: 15px;
+      }
+      .rect1 {
+          margin-left: 80px;
+          height: 230px;
+         }
+         .rect2 {
+             margin-right: 80px;
+             height: 230px;
+         }
+         .titulocard{
+             margin-left: 110px;
+         }
+         .titulocard2{
+             margin-left: 30px;
+         }
+         .textocard1{
+             width: 650px;
+             
+         }  
+         .textocard2{
+             width: 650px;
+             margin-left: 30px;
+         }  
+ }
+ 
+ @media (max-width: 771px) {
+     .h5card{
+         font-size: 15px;
+     }
+     .txt-card{
+         font-size: 13px;
+     }
+     .rect1 {
+         margin-left: 50px;
+         height: 300px;
+     }
+     .rect2 {
+         margin-right: 50px;
+         height: 300px;
+     }
+     .titulocard{
+         margin-left: 50px;
+     }
+     .titulocard2{
+         margin-left: 50px;
+     }
+     .textocard2{
+         width: 500px;
+         margin-left: 1px;
+     }  
+     .textocard1{
+         width: 500px;
+         margin-right: 2px;;
+     }
+     #botonera{
+         padding: 1rem 0.8rem;
+         right: 0;
+         position: fixed;
+         bottom: 40%;
+         background-color: #0097d8;  
+         border-top-left-radius: 20px;
+         border-bottom-left-radius: 20px;
+     }
+ }
+ @media (max-width: 768px){
+     #header-img img{
+         height: 220px;
+     }
+ }
+ 
+ @media (max-width: 520px) {
+ .h5card{
+         font-size: 15px;
+     }
+     .txt-card{
+     font-size: 13px;
+     }
+     .rect1 {
+     margin-left: 50px;
+     height: 300px;
+ }
+ .rect2 {
+     margin-right: 50px;
+     height: 300px;
+ }
+ .titulocard{
+     margin-left: 50px;
+ }
+ .titulocard2{
+     margin-left: 50px;
+ }
+ .textocard2{
+     width: 450px;
+     margin-left: 1px;
+ }  
+ .textocard1{
+     width: 450px;
+     margin-right: 2px;;
+ }
+ 
+ 
+ }
+ 
+ @media (max-width: 472px) {
+     .h5card{
+          font-size: 15px;
+      }
+      .txt-card{
+         font-size: 13px;
+      }
+      .rect1 {
+         margin-left: 20px;
+         height: 300px;
+     }
+     .rect2 {
+         margin-right: 20px;
+         height: 300px;
+     }
+     .titulocard{
+         margin-left: 30px;
+     }
+     .titulocard2{
+         margin-left: 30px;
+     }
+     .textocard2{
+         width: 430px;
+         margin-left: 1px;
+     }  
+     .textocard1{
+         width: 430px;
+         margin-right: 2px;;
+     }
+  
+    
+ }
+ 
+ @media (max-width: 436px) {
+     .h5card{
+          font-size: 14px;
+      }
+      .txt-card{
+         font-size: 12px;
+      }
+      .rect1 {
+         margin-left: 0px;
+         height: 300px;
+     }
+     .rect2 {
+         margin-right: 0px;
+         height: 300px;
+     }
+     .titulocard{
+         margin-left: 20px;
+     }
+     .titulocard2{
+         margin-left: 30px;
+     }
+     .textocard2{
+         width: 450px;
+         margin-left: 1px;
+     }  
+     .textocard1{
+         width: 450px;
+         margin-right: 2px;;
+     }
+     .ti2{
+         margin-left: 20px;
+     }
+  
+    
+ }
+ @media (max-width: 423px) {
+     .h5card{
+          font-size: 13px;
+      }
+      .txt-card{
+         font-size: 12px;
+      }
+      .rect1 {
+         margin-left: 0px;
+         height: 300px;
+     }
+     .rect2 {
+         margin-right: 0px;
+         height: 300px;
+     }
+     .titulocard{
+         margin-left: 20px;
+     }
+     .titulocard2{
+         margin-left: 30px;
+     }
+     .textocard2{
+         width: 400px;
+         margin-left: 1px;
+     }  
+     .textocard1{
+         width: 400px;
+         margin-right: 2px;;
+     }
+     .ti2{
+         margin-left: 20px;
+     }
+  
+     #botonera{
+         padding: 1rem 0.8rem;
+         right: 0;
+         position: fixed;
+         bottom: 50%;
+         background-color: #0097d8;  
+         border-top-left-radius: 20px;
+         border-bottom-left-radius: 20px;
+     }
+ }
+ @media (max-width: 399px) {
+     .h5card{
+          font-size: 12px;
+      }
+      .txt-card{
+         font-size: 11px;
+      }
+      .rect1 {
+         margin-left: 0px;
+         height: 300px;
+     }
+     .rect2 {
+         margin-right: 0px;
+         height: 300px;
+     }
+     .titulocard{
+         margin-left: 20px;
+     }
+     .titulocard2{
+         margin-left: 30px;
+     }
+     .textocard2{
+         width: 400px;
+         margin-left: 1px;
+     }  
+     .textocard1{
+         width: 400px;
+         margin-right: 2px;;
+     }
+     .ti2{
+         margin-left: 20px;
+     }
+     #botonera{
+         padding: 1rem 0.8rem;
+         right: 0;
+         position: fixed;
+         bottom: 65%;
+         background-color: #0097d8;  
+         border-top-left-radius: 20px;
+         border-bottom-left-radius: 20px;
+     }
+ }
+ @media (max-width: 383px) {
+     .h5card{
+          font-size: 11px;
+      }
+      .txt-card{
+         font-size: 10px;
+      }
+      .rect1 {
+         margin-left: 0px;
+         height: 300px;
+     }
+     .rect2 {
+         margin-right: 0px;
+         height: 300px;
+     }
+     .titulocard{
+         margin-left: 20px;
+     }
+     .titulocard2{
+         margin-left: 30px;
+     }
+     .textocard2{
+         width: 350px;
+         margin-left: 1px;
+     }  
+     .textocard1{
+         width: 350px;
+         margin-right: 2px;;
+     }
+     .ti2{
+         margin-left: 20px;
+     }
+  
+    
+ }
+ 
+ .card{
+     min-height: 300px; 
+     max-width: 470px;
+ }
