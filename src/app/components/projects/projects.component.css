@@ -24,8 +24,8 @@ a, a:hover {
 }
 
 #pageHeaderTitle {
-	margin: 2rem 0;
-	text-transform: uppercase;
+  padding-top: 45px;
+	margin: 4rem 0;
 	text-align: center;
 	font-size: 2.5rem;
 }
@@ -218,7 +218,7 @@ a, a:hover {
     }
 	
   .postcard.dark {
-		.postcard__text:before {
+		.postcard__text::before {
 			background: #18151f;
 		}
   }

@@ -1,17 +1,101 @@
-.contenedor{
-    height: 100vh;
-    display: flex;
-    align-items: center;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a0d14 !important;
 }
-.carta{
-    height: 420px;
-    border-radius: 50%;
-    background-color: black;
+
+div.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+div.grid {
+    margin: 20px auto;
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+div.buttoncontainer {
+    padding: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.nombre-card{
-    color: blue;
-    text-align: center;
+
+a.button {
+    width: 190px;
+    height: 190px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+a.button:hover {
+    transition: linear;
+    transition-duration: 100ms;
+    scale: 1.05;
+}
+
+a.whatsapp {
+    background-color: #0097d8;
+    color: white;
+    border-top-left-radius: 180px;
+    transition: linear;
+    transition-duration: 100ms;
+}
+
+a.linkedin {
+    background-color: #0097d8;
+    color: #ffffff;
+    border-top-right-radius: 180px;
+    transition: linear;
+    transition-duration: 100ms;
+}
+
+a.github {
+    background-color: #0097d8;
+    color: #ffffff;
+    border-bottom-left-radius: 180px;
+    transition: linear;
+    transition-duration: 100ms;
+}
+
+a.mailme {
+    background-color: #0097d8;
+    color: white;
+    border-bottom-right-radius: 180px;
+    transition: linear;
+    transition-duration: 100ms;
+}
+
+a.whatsapp:hover {
+    background-color: #25d366;
+    color: white;
+}
+
+a.linkedin:hover {
+    background-color: #5b5b5b;
+    color: #0097d8;
+}
+
+a.github:hover {
+    background-color: #010001;
+    color: white;
+}
+
+a.mailme:hover {
+    background-color: #f2a60c;
+    color: white;
 }
