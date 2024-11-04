@@ -99,3 +99,16 @@ a.mailme:hover {
     background-color: #f2a60c;
     color: white;
 }
+
+@media (max-width: 400px){
+    div.grid {
+        margin: 5px auto;
+        width: 300px;
+        height: 300px;
+        display: grid;
+        grid-template-columns: 145px 145px;
+        grid-row: auto auto;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+}

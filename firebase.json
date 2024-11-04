@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/PORTFOLIO-BP",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
