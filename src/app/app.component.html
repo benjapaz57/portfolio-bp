@@ -6,22 +6,26 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
         <li class="nav-item me-4">
-          <a class="nav-link" routerLink="/Home" routerLinkActive="active" ariaCurrentWhenActive="page" href="/home">Home</a>
+          <a class="nav-link" routerLink="/Home" routerLinkActive="active" ariaCurrentWhenActive="page" href="/home">{{"navhome" | translate}}</a>
         </li>
         <li class="nav-item me-4">
-          <a class="nav-link" routerLink="/projects" routerLinkActive="active" ariaCurrentWhenActive="page" href="/projects">Projects</a>
+          <a class="nav-link" routerLink="/projects" routerLinkActive="active" ariaCurrentWhenActive="page" href="/projects">{{"navprojects" | translate}}</a>
         </li>
         <li class="nav-item me-4">
-          <a class="nav-link" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page" href="/contact">Contact</a>
+          <a class="nav-link" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page" href="/contact">{{"navcontact" | translate}}</a>
         </li>
       </ul>
     </div>
+    <button type="button" class="btn btn-light me-2" (click)="translateText('en')">En</button>
+    <button type="button" class="btn btn-light me-2" (click)="translateText('es')">Es</button>
   </div>
 </nav>
 <main>
   <router-outlet />
 </main>
 <footer class="text-center">
-  <p>Todos los derechos reservados a BeDev.</p>
+  <p>
+    {{"footer" | translate}}
+  </p>
 </footer>
 
