@@ -8,6 +8,10 @@ nav ul li a{
 nav ul li a:hover{
     color: #97defd;
 }
+.active {
+    font-weight: bold;
+    color: #97defd; 
+  }
 footer{
     background-color: rgba(78, 78, 78, 0.507) !important;
 }

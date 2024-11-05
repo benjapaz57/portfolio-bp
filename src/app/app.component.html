@@ -3,6 +3,8 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <button type="button" class="btn btn-secondary me-2 btn-sm active" [class.active]="currentLang === 'en'" (click)="translateText('en')">En</button>
+    <button type="button" class="btn btn-secondary me-2 btn-sm" [class.active]="currentLang === 'es'" (click)="translateText('es')">Es</button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
         <li class="nav-item me-4">
@@ -16,8 +18,12 @@
         </li>
       </ul>
     </div>
-    <button type="button" class="btn btn-light me-2" (click)="translateText('en')">En</button>
-    <button type="button" class="btn btn-light me-2" (click)="translateText('es')">Es</button>
+    <a href="assets/Benjamin_Paz_Resume.pdf" download>
+      <button class="btn btn-secondary me-2">
+        Resume 
+        <i class="bi bi-cloud-arrow-down"></i>
+      </button>
+    </a>
   </div>
 </nav>
 <main>
