@@ -1,6 +1,20 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+.container {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    max-width: 100% !important;
+}
+.contenido {
+    width: 100%;
+    overflow-x: hidden;
+}
 .navegador{
     background-color: rgba(78, 78, 78, 0.507) !important;
-    padding: 15px;
 }
 nav ul li a{
     color: whitesmoke;
@@ -16,7 +30,7 @@ footer{
     background-color: rgba(78, 78, 78, 0.507) !important;
 }
 footer p{
-    padding: 10px;
+    padding: 10px 0;
     margin-top: 5px;
     margin-bottom: 0;
     color: white;
@@ -24,3 +38,12 @@ footer p{
 footer p:hover{
     color: #97defd;
 }
+/* .botones {
+    padding: 1rem 0.8rem;
+    right: 0;
+    position: fixed;
+    bottom: 15%;
+    background-color: #97defda1;  
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+} */
