@@ -19,7 +19,7 @@
           <a class="nav-link text-center" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page" href="/contact">{{"navcontact" | translate}}</a>
         </li>
       </ul>
-      <div class="text-center">
+      <div class="text-center margen">
         <a href="assets/Benjamin_Paz_Resume.pdf" download>
           <button class="btn btn-secondary ms-2">
             CV 
@@ -30,15 +30,11 @@
     </div>
   </div>
 </nav>
+
 <main class="contenido">
   <router-outlet />
 </main>
-<!-- botones flotantes -->
-<!-- <div class="botones d-grid" id="botonera">
-  <button type="button" class="btn btn-secondary me-2 btn-sm active btn-resume" [class.active]="currentLang === 'en'" (click)="translateText('en')">En</button>
-  <button type="button" class="btn btn-secondary me-2 btn-sm" [class.active]="currentLang === 'es'" (click)="translateText('es')">Es</button>
-</div> -->
-<!-- termina botones -->
+
 <footer class="text-center">
   <p>
     {{"footer" | translate}}

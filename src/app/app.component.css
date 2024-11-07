@@ -22,6 +22,14 @@ nav ul li a{
 nav ul li a:hover{
     color: #97defd;
 }
+.navbar-toggler {
+    border-color: white;
+    margin: 0 5px;
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
 .active {
     font-weight: bold;
     color: #97defd; 
@@ -47,3 +55,8 @@ footer p:hover{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 } */
+ @media (min-width: 1300px){
+    .margen{
+        margin-right: 10px;
+    }
+ }
